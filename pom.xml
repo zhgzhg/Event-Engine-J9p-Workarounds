@@ -7,6 +7,14 @@
     <version>0.1</version>
     <packaging>jar</packaging>
 
+    <distributionManagement>
+        <repository>
+            <id>bintray-zhgzhg-Event-Engine</id>
+            <name>zhgzhg-Event-Engine</name>
+            <url>https://api.bintray.com/maven/zhgzhg/Event-Engine/Event-Engine-J9p-Workarounds/;publish=0;override=1</url>
+        </repository>
+    </distributionManagement>
+
     <name>Event Engine Java 9+ Workarounds</name>
     <description>Workarounds for the Event Engine project developed for compatibility with the modularization of Java 9 and later versions.</description>
     <licenses>
