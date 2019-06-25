@@ -2,19 +2,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.zhgzhg</groupId>
-    <artifactId>event-engine-j9p-workarounds</artifactId>
-    <version>0.2.0</version>
-    <packaging>jar</packaging>
-
-    <distributionManagement>
-        <repository>
-            <id>bintray-zhgzhg-Event-Engine</id>
-            <name>zhgzhg-Event-Engine</name>
-            <url>https://api.bintray.com/maven/zhgzhg/Event-Engine/Event-Engine-J9p-Workarounds/;publish=0;override=1</url>
-        </repository>
-    </distributionManagement>
-
     <name>Event Engine Java 9+ Workarounds</name>
     <description>Workarounds for the Event Engine project developed for compatibility with the modularization of Java 9 and later versions.</description>
     <url>https://github.com/zhgzhg/Event-Engine-J9p-Workarounds</url>
@@ -26,6 +13,36 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
+
+    <groupId>com.github.zhgzhg</groupId>
+    <artifactId>event-engine-j9p-workarounds</artifactId>
+    <version>0.2.1</version>
+    <packaging>jar</packaging>
+
+    <scm>
+        <connection>scm:git:git@github.com:zhgzhg/Event-Engine-J9p-Workarounds.git</connection>
+        <developerConnection>scm:git:git@github.com:zhgzhg/Event-Engine-J9p-Workarounds.git</developerConnection>
+        <url>https://github.com/zhgzhg/Event-Engine-J9p-Workarounds.git</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-zhgzhg-Event-Engine</id>
+            <name>zhgzhg-Event-Engine</name>
+            <url>https://api.bintray.com/maven/zhgzhg/Event-Engine/Event-Engine-J9p-Workarounds/;publish=0;override=1</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-zhgzhg-Event-Engine</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/zhgzhg/Event-Engine</url>
+        </repository>
+    </repositories>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,7 +72,7 @@
                 <plugin>
                     <groupId>org.apache.maven</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.2</version>
                 </plugin>
 
                 <plugin>
@@ -141,7 +158,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.1.2</version>
                 <configuration>
                     <archive>
                         <manifestEntries>
