@@ -16,7 +16,7 @@
 
     <groupId>com.github.zhgzhg</groupId>
     <artifactId>event-engine-j9p-workarounds</artifactId>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <packaging>jar</packaging>
 
     <scm>
@@ -27,20 +27,17 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray-zhgzhg-Event-Engine</id>
+            <id>github-zhgzhg-Event-Engine</id>
             <name>zhgzhg-Event-Engine</name>
-            <url>https://api.bintray.com/maven/zhgzhg/Event-Engine/Event-Engine-J9p-Workarounds/;publish=0;override=1</url>
+            <url>https://maven.pkg.github.com/zhgzhg/Event-Engine</url>
         </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>bintray-zhgzhg-Event-Engine</id>
-            <name>bintray</name>
-            <url>https://dl.bintray.com/zhgzhg/Event-Engine</url>
+            <id>github-zhgzhg-Event-Engine</id>
+            <name>github</name>
+            <url>https://maven.pkg.github.com/zhgzhg/Event-Engine</url>
         </repository>
     </repositories>
 
